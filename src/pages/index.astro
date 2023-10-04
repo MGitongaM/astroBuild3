@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import ImageWeb3 from '../../src/images/image-web-3-desktop.jpg'
+import RetroPc from '../images/image-retro-pcs.jpg'
+import TopLaptop from '../images/image-top-laptops.jpg'
+import GamePad from '../images/image-gaming-growth.jpg'
+---
+
+<Layout title="W home page">
+	<section class="w-full max-w-7xl mx-auto px-10">
+		<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+			<div class="col-span-1 md:col-span-8">
+				<Image
+					src={ImageWeb3}
+					alt='web3-image'
+					format='webp'
+				/>
+				<div class="grid grid-cols-2 gap-4 mt-4">
+					<div class="">
+						<h1 class="text-2xl md:text-6xl font-bold">The Bright Future of Web 3.0?</h1>
+					</div>
+					<div class="space-y-4">
+						<p class="line-clamp-2 md:line-clamp-none">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its</p>
+						<button type="button" class="py-2 px-4 inline-flex justify-center items-center gap-2  border border-transparent font-semibold bg-red-400 text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 transition-all text-sm ">
+							Read More
+						  </button>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-1 md:col-span-4 bg-blue-950 space-y-14 px-5">
+				<p class="text-3xl text-orange-300 font-bold pt-2">New</p>
+				<div class="text-white space-y-2">
+					<p class="text-lg font-medium">Hydrogen VS Electric Cars</p>
+					<p class="text-sm font-thin">Will hydrogen-fueled cars ever catch up to Evs?</p>
+					<hr class="bg-white w-full"/>
+				</div>
+				<div class="text-white space-y-2">
+					<p class="text-lg font-medium">The Downsides of Al Artistry</p>
+					<p class="text-sm font-thin">What are the possible adverse effects of on-demand Al image generation?</p>
+					<hr class="bg-white w-full"/>
+				</div>
+				<div class="text-white space-y-2">
+					<p class="text-lg font-medium">Is VC Funding Drying Up?</p>
+					<p class="text-sm font-thin">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+					<hr class="bg-white w-full"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+			<div>
+				<div class="flex space-x-2">
+					<div>
+						<Image
+							src={RetroPc}
+							alt="retro pc"
+							format='webp'
+							class='object-cover h-44 w-44'
+						/>
+					</div>
+					<div class="space-y-1">
+						<span class="text-3xl font-bold text-gray-400">01</span>
+						<h2 class="text-md font-bold">Reviving Retro PCs</h2>
+						<p class="text-gray-400">What happens when old PCs are given modern upgrades?</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="flex space-x-2">
+					<div>
+						<Image
+							src={TopLaptop}
+							alt="top laptops"
+							format='webp'
+							class='object-cover h-44 w-44'
+						/>
+					</div>
+					<div class="space-y-1">
+						<p class="text-3xl font-bold text-gray-400">02</p>
+						<h2 class="text-md font-bold">Top 10 Laptops of 2022</h2>
+						<p class="text-gray-400">Our best picks for various needs and budgets.</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="flex space-x-2">
+					<div>
+						<Image
+							src={GamePad}
+							alt="retro pc"
+							format='webp'
+							class='object-cover h-44 w-44'
+						/>
+					</div>
+					<div class="space-y-1">
+						<span class="text-3xl font-bold text-gray-400">03</span>
+						<h2 class="text-md font-bold">The Growth of Gaming</h2>
+						<p class="text-gray-400">How the pandemic has sparked fresh opportunities.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
+
